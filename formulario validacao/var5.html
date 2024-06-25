@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head> <title>macbife V</title>
+<script type="text/javascript">
+    function verificar() {
+        var n1 =  document.getElementById("txtPratPrin").value;
+        var n2 =  document.getElementById("txtResp").value;
+        if(n1==""){
+            window.alert("digite o numero de pessoas para a reserva");
+            document.getElementById("txtPratPrin").focus();
+            document.getElementById("txtPratPrin").style.backgroundColor="#ff0000";
+            return;
+        }
+        else if(isNaN(n1)){
+            window.alert("digite APENAS numeros para a reserva");
+            document.getElementById("txtPratPrin").value="";
+            document.getElementById("txtPratPrin").focus();
+            document.getElementById("txtPratPrin").style.backgroundColor="#ff0000";
+            return;
+        }
+        else{
+            window.alert("numero OK");
+            document.getElementById("txtPratPrin").style.backgroundColor="#0000ff";
+        }
+
+        
+        if(n2==""){
+            window.alert("digite o nome do responsavel pele reserva");
+            document.getElementById("txtResp").focus();
+            document.getElementById("txtResp").style.backgroundColor="#ff0000";
+        }
+        else{
+            window.alert("responsavel OK");
+            document.getElementById("txtResp").style.backgroundColor="#0000ff";
+   
+        }
+    }
+    </script>
+    </head>
+    <body>
+    <form id="CadReserva">
+        <fieldset>
+            <legend>sistema de reserva</legend>
+            <label>entre o numero de pessoas para a reserva</label>
+    <input type="text" id="txtPratPrin" size="30" maxlength="29" /></p>
+    <label>nome do responsavel pela reserva</label>
+    <input type="text" id="txtResp" size="30" maxlength="29" /> <br />
+    <input type="button" value="confirma" onClick="verificar()" />
+    </fieldset>
+</form>
+ </body>
+</html>
+    

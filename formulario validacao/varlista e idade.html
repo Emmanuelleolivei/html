@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    function vverificar(){
+        var n = document.getElementById("txtfil").value;
+        var opc = document.getElementById("selopc").value;
+        if(n==""){
+            window.alert("digite numeros de filhos");
+            document.getElementById("txtfil").focus();
+            document.getElementById("txtfil").style.backgroundColor="#f00";
+        }
+        else if(isNaN(N)){
+        window.alert("digite apenas numeros");
+        document.getElementById("txtfil").focus();
+        document.getElementById("txtfil").style.backgroundColor="#f00";
+        document.getElementById("txtfil").value="";
+        }
+        else if(n<0||n>33){
+        window.alert("numeros entre de zero a trinta e três");
+        document.getElementById("txtfil").focus();
+        document.getElementById("txtfil").style.backgroundColor="#f00";
+        document.getElementById("txtfil").value="";
+        }
+        else if(opc==="x"){
+            window.alert("selecione uma opção");
+            document.getElementById("selopc").focus();
+            document.getElementById("selopc").style.background="#f00";
+            document.getElementById("selopc").value="";
+        }
+        else{
+            window.alert("cadastro ok");
+        }
+    }
+    </script>
+    </head>
+    <body>
+        form id="frmcadastro" method="post">
+        <label for="txtnumero">digite o numero de filhos</label>
+        <input type="text" id="txtfil" size="3" maclenght="2"> <br /> <br/>
+        <label>sua situação
+            <select id="selopc">
+                <option value="x">escolher</option>
+                <option value="e">empregado</option>
+                <option value="a">aposentado</option>
+                <option value="f">afastado</option>
+                 <option value="d">desempregado</option>
+            </select> </label>
+            <br /> <br /> <br /> <br />
+            <input type="button" value="confirmar os dados" onClick="verifica()" />
+        </form>
+    </body>

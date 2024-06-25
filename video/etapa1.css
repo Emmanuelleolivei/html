@@ -1,0 +1,9 @@
+body{background-color:#c0c0c0;border-style:solid;
+     border-width:5px;width:60%;
+    margin-left:20%;margin-right:20%;
+    text-align:center}
+nav ul{font-size:150%}
+nav ul{list-style:none;display:none}
+nav ul li{display:inline;border-style:solid}
+nav ul a {color:#000000}
+{border-style:solid:border-width:5px}

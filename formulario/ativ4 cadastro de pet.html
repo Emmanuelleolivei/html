@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>formulario</title>
+    </head>
+    <body>
+        <h1>cadrastro dos animais de estimação</h1>
+        <form id="frmcad">
+        <p>nome do responsavel do pet : &nbsp; &nbsp;
+            <input type="text" id="txtnome" size="40" maxlenght="38" />  </p>
+            <p>
+                digite o nome ou apelido do pet : <input type="text" id="txtender" size="60" maxlength="58" /> </p>
+                endereço: <input type="text" id="txtender" size="60" maxlength="58" /> </p>
+                <p> sexo:
+                    <input type="radio" id="radsex1" name="sexo" checked="checked" /> fêmea
+                    <input type="radio" id="radsex2" name="sexo" /> macho
+                    <input type="radio" id="radsex2" name="sexo" /> outros
+                </p>
+                <p>situaçao:
+                    <input type="checkbox" id="chkemp" value="1" /> filhote
+                    <input type="checkbox" id="chkcas" value="1" /> castrado
+                    <input type="checkbox" id="chkest" value="1" /> pedgree 
+                    <input type="checkbox" id="chkest" value="1" /> vacinado <p>
+                <p>assinare o tipo de pet:
+                    <select id="lstper">
+                        <option value="g"> gato </option>
+                        <option selected="selection" value="c">cachorro</option>
+                        <option value="a"> ave </option>
+                        <option value="r"> roedor </option>
+                        <option value="l"> lagarto </option>
+                        <option value="p"> peixe </option>
+                        <option value="o"> outros </option>
+                        
+                    </select>
+                    <p>observaçao:
+                        <textarea id="txtobs" rows="5" cols="50">
+                        </textarea> </p>
+                <p>
+                    <input type="reset" value="confirmar o cadastro de pet" />
+                    <input type="submit" value="limpar tudo" />
+                    <input type="button" />
+            </form>
+        </body>
+    </html>

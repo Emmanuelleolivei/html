@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>       <meta charset="utf-8">
+        <title>Rotate</title>
+		<style>
+		.geral { width: 200px; height: 293px; position: ralative;
+		 margin:10% auto 0; -webkit-perspective: 500;
+		}
+		.carta{  width:100%; height: 100%; position: absolute;
+		  -webkit-transform-style: preserve-3d;
+		  -webkit-transition: -webkit-transform 1s; float:left
+		}
+
+		.carta:hover { -webkit-transform: rotateY(-180deg);}
+
+		.atras { -webkit-transform: rotateY(180deg);}
+
+		.carta figure { margin:0; display:block; position:absolute; width: 100%; height:100%;
+		 -webkit-backface-visibility: hidden;
+		}
+		
+		.carta figure img {width:200px}
+		</style>
+   </head>
+   <body>
+   <section id="texto">
+     <p> a classe "frente" é apenas para indicar a figura inicial</p>
+	 <p> :hover é acionado quando o cursor está sobre a imagem</p>
+	 <p> 1° passe o cursor sobre a imagem</p>
+	 <p> 2° mude -webkit-transform 1s para 3s</p>
+	 <p> 3° mude o hover para rotateY(-120deg) </P>
+	</section>
+	<section class-"geral">
+	  <div class="carta">
+	    <figure class="frente"><img src="frente.jpg"></figure>
+		<figure class="atras"><img src="verso.jpg"></figure>
+	  </div>
+	</section>
+	</body>
+</html>
+	

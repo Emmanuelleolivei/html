@@ -1,0 +1,27 @@
+<html>
+
+<h1>DOAÇÕES</h1>
+<script type="text/javascript">
+    function verificar(){
+        var n = document.getElementById("txtval").value;
+        var opc = document.getElementById("selval").value;
+        if(n==""){
+            window.alert("escolha um valor");
+            document.getElementById("txtval").focus();
+        }
+    }
+    </script>
+    <body>
+    <form id="frmdoações" method="post">
+   <label> VALOR DA DOAÇÃO 
+<select id="selval">
+    <option value="a">selecionar</option>
+    <option value="b">R$10,00</option>
+    <option value="c">R$100,00</option>
+    <option value="d">R$1000,00</option>
+</select> </label>
+<br/> <br/>
+<input type="submit" value="enviar"/>
+    </form>
+    </body>
+</html>

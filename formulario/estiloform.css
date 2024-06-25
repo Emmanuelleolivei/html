@@ -1,0 +1,11 @@
+body{background-color:#c0c0c0}
+form{color:#cd853f}
+p{font-size:120%}
+h1{text-align:center}
+input{border-style:solid;border-color:#DAA520}
+input:checked{
+    margin-left: 25px;
+    border: 1px solid blue
+}
+.fundo{background-color:#00ff00;}
+#texto2{background-color:#0000ff;}

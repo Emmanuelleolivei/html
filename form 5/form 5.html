@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>validacao de campos html 5</title>
+    </head>
+    <body>
+        <form action="pagina2.html">
+            <p>nome: <imput type="text" required="required" name="txtnome" pattern="[a-z\s]+S" /> </p>
+            <p>idade:<input type="number" required="required" name="txtidade" pattern="[0-9]+s"
+                   min="0" max="130" /> </p>
+            <p>data de nascimento:
+            <input type="date" required="required" maxlength="10" name="txtnasc"
+                      pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}S" min="1900-01-01" max="2014-02-18" />
+            </p>
+            <p>digite o email:
+                <input type="email" id="txtmail" title="nao esqueça formato email com @ e ." required /> </p>
+            
+            <p>digite o telefone:
+                <input type="tel" id="txtfone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" required />
+                (xx)&nbsp; xxxx-xxxx  </p>
+
+                <p>cor do veiculo:
+                    <input id=""
+                

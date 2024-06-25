@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>formulario</title>
+    </head>
+    <body>
+        <h1>cadrastro de aluno</h1>
+        <form id="frmcad">
+        <p>nome: &nbsp; &nbsp;
+            <input type="text" id="txtnome" size="40" maxlenght="38" />  </p>
+            <p>
+                endereço: <input type="text" id="txtender" size="60" maxlength="58" /> </p>
+                <p> sexo:
+                    <input type="radio" id="radsex1" name="sexo" checked="checked" /> masculino
+                    <input type="radio" id="radsex2" name="sexo" /> feminino
+                </p>
+                <p>situaçao:
+                    <input type="checkbox" id="chkemp" value="1" /> empregado
+                    <input type="checkbox" id="chkcas" value="1" /> casado
+                    <input type="checkbox" id="chkest" value="1" /> estudando <p>
+                <p>periodo:
+                    <select id="lstper">
+                        <option value="m"> manhã </option>
+                        <option selected="selection" value="t">tarde</option>
+                        <option value="n">noite</option>
+                    </select>
+                    <p>observaçao:
+                        <textarea id="txtobs" rows="5" cols="50">
+                        </textarea> </p>
+                <p>
+                    <input type="reset" value="limpar" />
+                    <input type="submit" value="confirma o cadastro" />
+                    <input type="button" />
+            </form>
+        </body>
+    </html>

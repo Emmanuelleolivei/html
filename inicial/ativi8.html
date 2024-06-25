@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cadastro de aluno</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{background-color:#c0c0c0}
+            input{
+                  border-style:solid;border-color:#ccccff;border-width:3px;
+                  margin-top:3px
+                 }
+            p{ font-weight:bold;height:30px;width:75%}
+            </style>
+            <script type="text/javascript">
+                function testanome(){
+                var a1 = document.getElementById("txtnmAluno"). value;
+                if(a1==""){
+                    document.getElementById("txtnmAluno").focus();
+                    document.getElementById("txtnmAluno").style.backgroundcolor="#ff0000";
+                    window.alert("digite o nome");
+                }
+                else{
+                    window.alert("nome preenchido");
+                }
+                }
+                </script>
+    </head>
+    <body>
+        <form id="cadAluno" action="destino.html" method="get">
+            <p>digite seu nome:
+                <input type="text" id="txtnomAluno" size="42" maxlength="40" />
+            </p>
+               <p>digite seu rm:
+                <input type="text" id="txtRM" size="8" maxlength="6" />
+               </p>
+               <input type="reset" value="limpar os dados" />
+               <input type="submit" value="confirmar o cadastro" />
+               <input type="button" value="testar o nome" onClick="testanome()" />
+        </form>
+        </body>
+</html>

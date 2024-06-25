@@ -1,0 +1,18 @@
+img {
+    display: block; width: 100%;
+}    
+    #cat2 {display:none;}
+    #cat3 {display:none;}
+
+@media (min-width: 480px) {
+    #cat1 {width: 44%; display: inline;}
+    #cat2 {display:inline; width: 44%;}
+    #cat3 {display:none;}
+    
+}
+@media (min-width: 769px) {
+    #cat1 {width: 33%; display:inline;}
+    #cat2 {display:inline; width:33%;}
+    #cat3 {display:inline; width:33%;}
+    
+}

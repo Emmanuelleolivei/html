@@ -1,0 +1,37 @@
+<html>
+    <html>
+        <title>minha pagina</title>
+        <meta charset="utf-8" />
+        <link href="folha.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            function validar(){
+                var c,d;
+                c=document.getElementById("txtcomp").value;
+                d=document.getElementById("txtdin").value;
+                if(d<c){
+                    window.alert("valor em dinheiro insuficiente");
+                    document.getElementById("txtdin").value="";
+                    document.getElementById("txtdin").stylee.borderColor="#f00";
+                    return false;
+                }
+                else{
+                    window.aleret("compra efetuada");
+                    document.getElementById("txtdin").style.boderColor="#f00";
+                    return false;
+                }
+            }
+            </script>
+            </head>
+            <body>
+                <form id="frmcadastro" onSubmit="return validar()">
+                    <fieldset id="grupo1"><legend>vendas</legend>
+                        <p>preencha os dados abaixo:</p>
+                        <label>valor da compra
+                            <input type="text" id="txtcomp" /> </label> <br />
+                            <label>valor do dinheiro
+                                <input type="text" id="txtdin" /> </label> <br />
+                    </fieldset>
+                    <input type="submit" />
+                </form>
+            </body>
+    </html>
